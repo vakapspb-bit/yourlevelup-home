@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Образовательные и медиапроекты Виктории Маньковой">
+  <title>Your Level Up</title>
+  <style>
+    :root { --ink:#06123e; --aqua:#1ba8bd; --sky:#e8f9fb; --lilac:#f0edff; }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--ink); font-family:Inter,Arial,sans-serif; background:linear-gradient(135deg,#fff 0%,#f4fcfd 52%,#f5f2ff 100%); }
+    .wrap { width:min(1120px,calc(100% - 40px)); margin:auto; }
+    header { padding:24px 0; display:flex; justify-content:space-between; align-items:center; }
+    .brand { font-weight:800; letter-spacing:.06em; text-transform:uppercase; font-size:15px; }
+    .tag { margin:0; color:#54708b; font-size:14px; }
+    .hero { min-height:calc(100vh - 78px); display:grid; grid-template-columns:1.02fr .88fr; align-items:center; gap:58px; padding:42px 0 72px; }
+    .eyebrow { color:#178da3; font-weight:750; text-transform:uppercase; letter-spacing:.1em; font-size:12px; }
+    h1 { font-size:clamp(42px,6vw,76px); line-height:.95; margin:17px 0 23px; letter-spacing:-.055em; }
+    .lead { max-width:580px; color:#425a71; font-size:clamp(17px,2vw,21px); line-height:1.5; margin:0 0 34px; }
+    .cards { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+    .card { min-height:175px; padding:25px; border-radius:24px; text-decoration:none; color:var(--ink); display:flex; flex-direction:column; justify-content:space-between; transition:transform .2s,box-shadow .2s; box-shadow:0 10px 30px rgba(4,38,79,.08); }
+    .card:hover { transform:translateY(-5px); box-shadow:0 17px 38px rgba(4,38,79,.14); }
+    .card.wings { background:linear-gradient(135deg,#fff0d7,#ffd493); }
+    .card.figma { background:linear-gradient(135deg,#eee9ff,#cbbcff); }
+    .card small { color:#59718a; font-weight:650; }
+    .card strong { font-size:23px; }
+    .arrow { color:#168da4; font-size:28px; align-self:flex-end; }
+    .portrait { position:relative; }
+    .portrait img { display:block; width:100%; aspect-ratio:1/1; object-fit:cover; border-radius:36px; box-shadow:0 24px 60px rgba(4,38,79,.15); }
+    .about { margin:17px 10px 0; padding:0; }
+    .about h2 { font-size:18px; margin:0 0 7px; }
+    .about p { color:#436179; line-height:1.45; margin:0; }
+    footer { padding:24px 0 35px; color:#688097; font-size:14px; }
+    @media (max-width:800px) { .hero { grid-template-columns:1fr; padding-top:28px; } .portrait { max-width:590px; margin:20px auto 36px; } }
+    @media (max-width:480px) { .wrap { width:min(100% - 28px,1120px); } .tag { display:none; } .cards { grid-template-columns:1fr; } .card { min-height:135px; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">yourlevelup</div>
+      <p class="tag">Образовательные и медиапроекты</p>
+    </header>
+    <main class="hero">
+      <section>
+        <div class="eyebrow">Территория роста</div>
+        <h1>Идеи, которые<br>становятся делом.</h1>
+        <p class="lead">Здесь живут проекты для подростков, творчества и цифровых навыков.</p>
+        <div class="cards">
+          <a class="card wings" href="https://wings.yourlevelup.ru">
+            <small>Медиатехнологии</small><strong>Крылья</strong><span class="arrow">↗</span>
+          </a>
+          <a class="card figma" href="https://figma.yourlevelup.ru">
+            <small>Векторная графика для школьников</small><strong>Figma</strong><span class="arrow">↗</span>
+          </a>
+        </div>
+      </section>
+      <section class="portrait">
+        <img src="viktoriya-mankova.png" alt="Виктория Манькова">
+        <div class="about">
+          <h2>Виктория Манькова</h2>
+          <p>SMM-специалист, педагог дополнительного образования.</p>
+        </div>
+      </section>
+    </main>
+    <footer>© Виктория Манькова</footer>
+  </div>
+</body>
+</html>
